@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assistente Virtual de Diagnóstico Médico</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnóstico Médico Online</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Assistente Virtual de Diagnóstico Médico</h1>
-        <h2>Obtenha informações sobre seus sintomas e possíveis diagnósticos</h2>
-    </header>
-    <main>
-        <section id="intro">
-            <p>
-                Este sistema o ajudará a avaliar seus sintomas e obter informações sobre possíveis diagnósticos.
-            </p>
-            <p>
-                Por favor, responda as perguntas a seguir com o máximo de precisão possível.
-            </p>
-            <button onclick="iniciarAvaliacao()">Iniciar Avaliação</button>
-        </section>
-        <section id="avaliacao">
-            </section>
-        <section id="resultados">
-            </section>
-    </main>
-    <script src="script.js"></script>
+  <header>
+    <h1>Diagnóstico Médico Online</h1>
+  </header>
+  <main>
+    <section class="introducao">
+      <h2>Descubra o que você está sentindo</h2>
+      <p>Com nosso sistema de inteligência artificial, você pode obter um diagnóstico prévio e informações relevantes sobre sua saúde.</p>
+      <a href="#comecar" class="botao">Comece agora</a>
+    </section>
+    <section class="anamnese" id="comecar">
+      <h2>Compartilhe seus sintomas</h2>
+      <p>Para te ajudar a descobrir o que você está sentindo, responda algumas perguntas sobre seus sintomas.</p>
+      <form action="#">
+        <textarea name="sintomas" placeholder="Digite seus sintomas aqui"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <section class="diagnostico">
+      <h2>Sua Hipótese Diagnóstica</h2>
+      <p>Com base nas informações que você forneceu, a nossa inteligência artificial chegou à seguinte hipótese diagnóstica:</p>
+      <ul>
+        <li>Diagnóstico: <span id="diagnostico"></span></li>
+        <li>Probabilidade: <span id="probabilidade"></span></li>
+        <li>Exames necessários: <span id="exames"></span></li>
+        <li>Justificativa: <span id="justificativa"></span></li>
+        <li>Tratamento possível: <span id="tratamento"></span></li>
+        <li>Atendimento médico: <span id="atendimento"></span></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright &copy; 2024 - Diagnóstico Médico Online</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
